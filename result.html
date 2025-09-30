@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Result</title>
+</head>
+<body>
+    <h2>Case Details</h2>
+    <p><b>Parties:</b> {{ details.parties }}</p>
+    <p><b>Filing Date:</b> {{ details.filing_date }}</p>
+    <p><b>Next Hearing Date:</b> {{ details.next_hearing_date }}</p>
+    <p><b>Status:</b> {{ details.status }}</p>
+
+    <a href="{{ url_for('download', query_id=query_id) }}">Download Judgement PDF</a>
+</body>
+</html>
